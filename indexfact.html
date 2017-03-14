@@ -1,0 +1,40 @@
+<html>
+<head>
+	
+	<title>factorial</title>
+	<style>
+	body {
+     background: #F4F4F4;
+     padding-top: 70px;
+    
+  
+    }
+		input{
+			padding: 10px;
+					
+		}
+		
+	</style>
+	
+</head>
+<body>
+<input type="text" name="" placeholder="input number" id="fctr1Nmbr">
+<button type="button" onclick="fctr1Nmbr();">Click</button>
+<h2 id="prmNumbrshow"></h2>
+<script type="text/javascript">
+	function fctr1Nmbr(){
+		var Show = document.getElementById("prmNumbrshow");
+		var input=document.getElementById("fctr1Nmbr").value;
+
+		var result= input;
+		for (var i = 1; i < input; i++) {
+			result= result *i;
+		}
+		Show.innerHTML=result;
+
+		}
+
+	
+</script>
+</body>
+</html>
